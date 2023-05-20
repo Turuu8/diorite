@@ -17,7 +17,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
-    }, 2000);
+    }, 2500);
     return () => clear();
   }, []);
 
