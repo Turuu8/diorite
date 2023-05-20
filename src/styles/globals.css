@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-inter;
+  }
+  h2 {
+    @apply font-amiri font-thin;
+  }
+  h3 {
+    @apply font-roboto;
+  }
+  body {
+    @apply bg-cover bg-fixed bg-[url(https://pinecone.mn/background.webp)];
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+@layer components {
+  .type-feature-text {
+    @apply p-[60px] absolute bottom-0 left-0 text-[#fff] xl:p-[40px] lg:p-[0_30px_40px];
+  }
+  .type-feature-text h2 {
+    @apply text-[32px] leading-[56px] xl:text-[28px] lg:text-[26px] md:text-[20px] xl:leading-[49px];
+  }
+  .type-feature-text h3 {
+    @apply text-[17px] pt-[15px] font-thin leading-[20px] opacity-70 xl:text-[14px] lg:text-[16px] lg:p-0 md:text-[12px] xl:p-0;
+  }
+}
